@@ -1,3 +1,19 @@
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$database="zalego";
+$conn = mysqli_connect($server,$username,$password,$database);
+if($conn)
+{
+    echo "Database connected successfully";
+}
+else{
+    echo "error";
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +84,8 @@
             <div class="row pt-5">
          <h3>Contact us</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error non modi illo ad dolore officia cupiditate nemo ducimus delectus provident amet, accusantium, ex est pariatur repudiandae explicabo ipsam?</p>
-                <form>
+                <form action="index.php" method="POST">
+                
                    <div class="row">
                     <div class="mb-3 col-lg-6">
                         <label for="Firstname" class="form-label">First name</label>
