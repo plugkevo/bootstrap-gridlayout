@@ -4,15 +4,32 @@ $username="root";
 $password="";
 $database="zalego";
 $conn = mysqli_connect($server,$username,$password,$database);
-if($conn)
+
+
+    
+
+
+
+if( isset($_POST['submitButton'] ) )
 {
-    echo "Database connected successfully";
-}
-else{
-    echo "error";
-}
+//  1. fetch form data
+    $firstName = $_POST['firstname'];
+    $lastName = $_POST['lastname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phonenumber'];
+    $message = $_POST['message'];
+// 2. submit form data
 
-
+    $insertData=mysqli_query( $conn,"INSERT INTO contactus(firstname,lastname,email,phonenumber,message) 
+    VALUES('$firstName','$lastName','$email','$phone','$message')" );
+    if($insertData)
+    {
+        echo "data submitted successfully";
+    }
+    else{
+        echo "error occured";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +44,7 @@ else{
 </head>
 <body>
     <!-- navigation bar here -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+    <!-- <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">zalego academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardisplaynavigations" aria-expanded="false">
@@ -50,7 +67,7 @@ else{
         </div>
         
 
-    </nav>
+    </nav> -->
 
     <!-- end navigation bar here -->
     <main class="p-5 mb-4 bg-light ">
@@ -88,36 +105,36 @@ else{
                 
                    <div class="row">
                     <div class="mb-3 col-lg-6">
-                        <label for="Firstname" class="form-label">First name</label>
-                        <input type="text" class="form-control" placeholder="please enter your first name">
+                        <label for="firstname" class="form-label">First name</label>
+                        <input type="text" name="firstname" class="form-control" placeholder="please enter your first name">
 
                     </div>
                     <div class="mb-3 col-lg-6">
-                        <label for="Lastname" class="form-label">Last name</label>
-                        <input type="text" class="form-control" placeholder="please enter your last name">
+                        <label for="lastname" class="form-label">Last name</label>
+                        <input type="text" name="lastname" class="form-control" placeholder="please enter your last name">
                     </div>
                    </div>
                    <div class="row">
                     <div class="mb-3 col-lg-6">
                         <label for="email" class="form-label">email</label>
-                        <input type="text" class="form-control" placeholder="please enter your email">
+                        <input type="text"name="email"  class="form-control" placeholder="please enter your email">
 
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="please enter your last name">
+                        <input type="tel" name="phonenumber" class="form-control" placeholder="please enter your last name">
                     </div>
                    </div>
                    <div class="row">
                        <div class="col-lg-12">
                            <label for="message" class="form-label">Your message</label>
-                           <textarea cols="30" rows="10" class="form-control" placeholder="enter your message"></textarea>
+                           <textarea cols="30" name="message" rows="10" class="form-control" placeholder="enter your message"></textarea>
                        </div>
 
                    </div>
                    <br>
 
-                   <button class="btn btn-primary">SUBMIT</button>
+                   <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
                 </form>
                 </div>
                 	
