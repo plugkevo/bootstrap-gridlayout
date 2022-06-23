@@ -1,36 +1,6 @@
-<?php
-$server="localhost";
-$username="root";
-$password="";
-$database="zalego";
-$conn = mysqli_connect($server,$username,$password,$database);
+<?php include('process.php') ?>
 
 
-    
-
-
-
-if( isset($_POST['submitButton'] ) )
-{
-//  1. fetch form data
-    $firstName = $_POST['firstname'];
-    $lastName = $_POST['lastname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phonenumber'];
-    $message = $_POST['message'];
-// 2. submit form data
-
-    $insertData=mysqli_query( $conn,"INSERT INTO contactus(firstname,lastname,email,phonenumber,message) 
-    VALUES('$firstName','$lastName','$email','$phone','$message')" );
-    if($insertData)
-    {
-        echo "data submitted successfully";
-    }
-    else{
-        echo "error occured";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +14,7 @@ if( isset($_POST['submitButton'] ) )
 </head>
 <body>
     <!-- navigation bar here -->
-    <!-- <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+     <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">zalego academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardisplaynavigations" aria-expanded="false">
@@ -102,7 +72,16 @@ if( isset($_POST['submitButton'] ) )
          <h3>Contact us</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error non modi illo ad dolore officia cupiditate nemo ducimus delectus provident amet, accusantium, ex est pariatur repudiandae explicabo ipsam?</p>
                 <form action="index.php" method="POST">
+                    
+                    <?php
+                    if($response)
+                    {
+                        include('response.php');
+                    }
+                    ?>
                 
+
+
                    <div class="row">
                     <div class="mb-3 col-lg-6">
                         <label for="firstname" class="form-label">First name</label>
