@@ -1,5 +1,5 @@
 <?php
-$response='';
+$response="";
 $server="localhost";
 $username="root";
 $password="";

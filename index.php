@@ -16,7 +16,7 @@
     <!-- navigation bar here -->
      <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">zalego academy</a>
+            <a href="#" class="navbar-brand">Kevann Academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardisplaynavigations" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,39 +31,44 @@
                      
                      
                 </div>
-            
+
             </div>
     
         </div>
         
 
-    </nav> -->
+    </nav> 
 
     <!-- end navigation bar here -->
     <main class="p-5 mb-4 bg-light ">
     <h1>
-        Welcome, Kevin
+        Welcome, 
     </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolore rerum minima alias repellendus quidem eaque aspernatur doloribus, illum accusamus? 
+    <p>To kevann group of schools where we offer quality education in all levels from CBC to 8-4-4 and  the british education system.
     </p>
     <button class="btn btn-primary">learn more</button>
-    </main>
+    </main> 
 
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h5>Header 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ex dolores quidem dolorum, nobis autem quasi consequuntur quod repellat tempore ab reiciendis cum aliquam voluptates impedit, voluptate voluptatum nemo corporis dolor natus. Maxime consequatur sed veniam labore autem ab quaerat sint, laudantium voluptates, debitis obcaecati at tempora dolorum est explicabo?</p>
+                <h5>8-4-4</h5>
+                <p>The 8-4-4 system of education was the primary education system in Kenya between 1985 and 2019. It was named for its structure of 8 years in primary school, 4 years in secondary school, and 4 years in university or other tertiary education. The system aimed to produce a skilled and knowledgeable workforce that would drive Kenya's economic development. </p>
                 <button class="btn btn-primary">view details</button>
             </div>
             <div class="col-lg-4">
-                <h5>Header 2</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ex dolores quidem dolorum, nobis autem quasi consequuntur quod repellat tempore ab reiciendis cum aliquam voluptates impedit, voluptate voluptatum nemo corporis dolor natus. Maxime consequatur sed veniam labore autem ab quaerat sint, laudantium voluptates, debitis obcaecati at tempora dolorum est explicabo?</p>
+                <h5> Competency-Based Curriculum (CBC)</h5>
+                <p>Under this system, each learner's progress is monitored over a period of 2-6-3-3 years, evenly divided into three major levels of education: Early years education. Middle school education. Senior school, tertiary, and university education.</p>
                  <button class="btn btn-primary">view details</button>
             </div>
             <div class="col-lg-4">
-                <h5>Header 3</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ex dolores quidem dolorum, nobis autem quasi consequuntur quod repellat tempore ab reiciendis cum aliquam voluptates impedit, voluptate voluptatum nemo corporis dolor natus. Maxime consequatur sed veniam labore autem ab quaerat sint, laudantium voluptates, debitis obcaecati at tempora dolorum est explicabo?</p>
+                <h5>British education system</h5>
+                <p>The education system in the UK is divided into four main parts, primary education, secondary education, further education and higher education
+                    The education system in the UK is also split into "key stages" which breaks down as follows:
+                    Key Stage 1: 5 to 7 years old
+                    Key Stage 2: 7 to 11 years old
+                    Key Stage 3: 11 to 14 years old
+                    Key Stage 4: 14 to 16 years old</p>
                 <button class="btn btn-primary">view details</button>
          </div>
 
