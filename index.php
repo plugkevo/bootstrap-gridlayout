@@ -16,7 +16,7 @@
     <!-- navigation bar here -->
      <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">Kevann Academy</a>
+            <a href="index.php" class="navbar-brand">Kevann Academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbardisplaynavigations" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,9 +25,9 @@
         
             <div class="collapse navbar-collapse" id="navbardisplaynavigations">
                 <div class="navbar-nav">
-                     <a href="#" class="nav-link active">Home</a>
+                     <a href="index.php" class="nav-link active">Home</a>
                      <a href="aboutus.html" class="nav-link"> About us</a>
-                     <a href="#" class="nav-link">Contact us</a>
+                     <a href="contactus.html" class="nav-link">Contact us</a>
                      
                      
                 </div>
@@ -75,7 +75,7 @@
             <!-- contact us page here -->
             <div class="row pt-5">
          <h3>Contact us</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae error non modi illo ad dolore officia cupiditate nemo ducimus delectus provident amet, accusantium, ex est pariatur repudiandae explicabo ipsam?</p>
+         <p>For more information click here <a href="contactus.html">contact us</a></p>
                 <form action="index.php" method="POST">
                     
                     <?php
